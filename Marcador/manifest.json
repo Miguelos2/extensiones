@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Scroll Percentage Viewer",
+  "version": "1.0",
+  "description": "Muestra el porcentaje de desplazamiento de una página.",
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
