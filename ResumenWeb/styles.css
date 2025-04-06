@@ -1,0 +1,49 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.popup-container {
+  width: 300px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
+#icon-container {
+  display: flex;
+  align-items: center;
+}
+
+#favicon {
+  margin-right: 10px;
+}
+
+#generate-summary {
+  margin-left: auto;
+  padding: 5px 10px;
+}
+
+#summary-container {
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+}
+
+#summary-container.hidden {
+  display: none;
+}
+
+#close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
